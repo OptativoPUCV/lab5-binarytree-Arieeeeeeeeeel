@@ -90,7 +90,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
             current = current->left;
         }
         else{
-            current = current->left;
+            current = current->right;
         }
     }
     return NULL;
