@@ -8,6 +8,8 @@ typedef struct TreeNode TreeNode;
 
 struct TreeNode {
     Pair* pair;
+    void* key;
+    void* value;
     TreeNode * left;
     TreeNode * right;
     TreeNode * parent;
@@ -78,7 +80,11 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     }
     TreeNode *current = tree->root;
     while (current != NULL){
-        int cmp = strcmp((char*) current->key, (char*)key);
+        int cmp = strcmp((char*)current->key, (char*)key);
+
+        if (cmp == 0){
+            return(current->key, current->value);
+        }
     }
 
 
