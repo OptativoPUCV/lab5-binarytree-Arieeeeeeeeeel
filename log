@@ -4,3 +4,17 @@ Thu 09 May 2024 05:31:26 PM UTC:
  tests:  4|7
 total_score: 5/70
 049d10a
+Thu 09 May 2024 05:41:40 PM UTC: 
+ treemap.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:81:41: error: ‘TreeNode’ has no member named ‘key’
+   81 |         int cmp = strcmp((char*) current->key, (char*)key);
+      |                                         ^~
+treemap.c:81:13: error: unused variable ‘cmp’ [-Werror=unused-variable]
+   81 |         int cmp = strcmp((char*) current->key, (char*)key);
+      |             ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+6fcf61e
