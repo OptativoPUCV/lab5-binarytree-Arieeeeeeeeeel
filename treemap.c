@@ -8,8 +8,6 @@ typedef struct TreeNode TreeNode;
 
 struct TreeNode {
     Pair* pair;
-    void* key;
-    void* value;
     TreeNode * left;
     TreeNode * right;
     TreeNode * parent;
