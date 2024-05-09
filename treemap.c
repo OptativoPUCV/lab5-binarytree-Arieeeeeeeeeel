@@ -128,7 +128,6 @@ Pair * upperBound(TreeMap * tree, void* key) {
     if (tree->lower_than(nodo_auxiliar->pair->key, key) == 0) {
         return nodo_auxiliar->pair;
     }
-    return NULL;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
