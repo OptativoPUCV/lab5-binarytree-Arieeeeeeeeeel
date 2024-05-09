@@ -117,14 +117,14 @@ Pair * upperBound(TreeMap * tree, void* key) {
         if (cmp == 0) {
             return current->pair;
         } else if (cmp > 0) {
-            ub_node = current; 
+            auxiliar_node= current; 
             current = current->left;
         } else {
             current = current->right;
         }
     }
-    if (ub_node != NULL) {
-        return ub_node->pair;
+    if (auxiliar_node != NULL) {
+        return auxiliar_node->pair;
     }
     return NULL;
 }

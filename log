@@ -185,3 +185,9 @@ treemap.c:113:15: error: unused variable ‘auxiliar_node’ [-Werror=unused-var
 cc1: all warnings being treated as errors
 Compilation failed
 bdadc6c
+Thu 09 May 2024 07:53:35 PM UTC: 
+ treemap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  7|6
+total_score: 5/70
+2599d75
