@@ -78,7 +78,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
         return NULL;
     }
     TreeNode *current = tree->root;
-    printf("%d\n", *(int*)key);
+    printf("%d\n", *(int*)current->key);
     while (current != NULL){
         int cmp = tree->lower_than(current->key, key);
 
